@@ -1,0 +1,45 @@
+h2, p{
+    display: inline;
+}
+
+span {
+    display: block;
+}
+.div-inline{
+    display: inline-block;
+    width: 110px;
+    height: 100px;
+    background-color: purple
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    background-color: greenyellow;
+}
+
+.flex-item{
+    background-color: violet;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer"
+    height: 150vh;
+}
+
+header{ grid-area: header; background: green; }
+nav{ grid-area: nav; background: chocolate; }
+main{ grid-area: main; background: maroon; }
+footer{ grid-area: footer; background: brown; }
